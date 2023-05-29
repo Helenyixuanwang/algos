@@ -47,3 +47,20 @@ def occ(arr):
         print("Unique")
         return True
 print(occ([1,3,1,4,4,]))
+
+
+#method 3, make use of defaultdict
+from collections import defaultdict 
+
+def unique_occ(arr):
+    dict = defaultdict(int)
+    for num in arr:
+        dict[num] += 1
+        print(dict)
+    val_set = set(dict.values())
+    print(val_set)
+    return len(val_set)==len(dict)
+
+arr1 = [1,3,1,3,4,4]
+print(unique_occ(arr1))
+# print(unique_occ([1,3,2,14,4,]))
