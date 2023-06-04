@@ -12,8 +12,9 @@ def longest_subStr_unique(str):
     for right in range(len(str)):
             # print(dict)
             dict[str[right]] += 1
+            print(dict)
             while 2 in dict.values():
-                print("2 exists: ")
+                print(f"{str[right]} exists: ")
                 dict[str[left]] -= 1
                 if dict[str[left]] == 0:
                     del dict[str[left]]
