@@ -7,7 +7,7 @@ from collections import defaultdict
 
 def longest_subStr_unique(str):
     dict = defaultdict(int)
-    ans = left = 0
+    ans, left = 0,0
     
     for right in range(len(str)):
             # print(dict)
