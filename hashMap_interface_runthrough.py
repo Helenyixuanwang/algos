@@ -33,3 +33,16 @@ for key in keys:
 values = hash_map.values()
 for val in values:
     print(val)
+
+# Comparison with arrays
+# In terms of time complexity, hash maps blow arrays out of the water. The following operations are all O(1) for a hash map:
+
+# Add an element and associate it with a value
+# Delete an element if it exists
+# Check if an element exists
+
+# A hash map also has many of the same useful properties as an array with the same time complexity:
+
+# Find length/number of elements
+# Updating values
+# Iterate over elements
