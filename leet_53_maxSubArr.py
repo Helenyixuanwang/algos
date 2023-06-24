@@ -7,6 +7,8 @@
 # Output: 6
 # Explanation: The subarray [4,-1,2,1] has the largest sum 6.
 
+# I learned this code from a youtube lecture. 
+
 def maxSum_subArr(arr):
     maxSum = arr[0]
     curSum = 0
