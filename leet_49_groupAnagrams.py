@@ -6,6 +6,9 @@
 
 # An anagram is a word or phrase formed by changing the order of the letters in another word or phrase. For example, ' triangle' is an anagram of ' integral'.
 
+# The sorted() function returns a sorted list of the specified iterable object.
+
+# You can specify ascending or descending order. Strings are sorted alphabetically, and numbers are sorted numerically.
 
 from collections import defaultdict
 def groupAnagrams( strs):
@@ -13,7 +16,7 @@ def groupAnagrams( strs):
         print("groups are like ", groups)
         for s in strs:
             print("s  ",s)
-            # to get a key like a word "aet", but not "a","e","t"
+            # to get a key like a string "aet", but not a list like ["a","e","t"]
             key = "".join(sorted(s))
             
             
