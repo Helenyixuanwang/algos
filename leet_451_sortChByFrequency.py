@@ -92,8 +92,11 @@ print(sorted(people, key=lambda item: people[item]))
     
 people = {3: "Jim", 2: "Jack", 4: "Jane", 1: "Jill"}
 print(people.items())
+#dict_items([(3, 'Jim'), (2, 'Jack'), (4, 'Jane'), (1, 'Jill')])
 print(people.keys())
+#dict_keys([3, 2, 4, 1])
 print(people.values())
+#dict_values(['Jim', 'Jack', 'Jane', 'Jill'])
 
 str = "u"
 print(9*str)
