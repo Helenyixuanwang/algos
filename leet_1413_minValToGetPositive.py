@@ -12,6 +12,10 @@
 
 # a faster and more effecient method, I wrote it after I read the explanation from the platform
 def minInitial(nums):
+    # the first element in the prefix array must be "0" zero because when all numbers in the 
+    # array are positive, the start value must be "1". At that time, the minVal should be zero
+    # so that "1" could be returned. If the prefix = [ nums[0]], the test cases will  fail when 
+    # numbers are positive.
     prefix = [0]
     for i in range(0, len(nums)):
         prefix.append( prefix[-1] + nums[i])
